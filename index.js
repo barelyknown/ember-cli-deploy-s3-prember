@@ -10,14 +10,14 @@ var EXPIRE_IN_2030               = new Date('2030');
 var TWO_YEAR_CACHE_PERIOD_IN_SEC = 60 * 60 * 24 * 365 * 2;
 
 module.exports = {
-  name: 'ember-cli-deploy-s3',
+  name: 'ember-cli-deploy-s3-prember',
 
   createDeployPlugin: function(options) {
     var DeployPlugin = DeployPluginBase.extend({
-      name: options.name,
+      name: 's3-prember',
       defaultConfig: {
-        filePattern: '**/*.{js,css,png,gif,ico,jpg,map,xml,txt,svg,swf,eot,ttf,woff,woff2,otf,wasm}',
-        fileIgnorePattern: null,
+        filePattern: '**/*.{html}',
+        fileIgnorePattern: '_empty.html',
         prefix: '',
         profile: '',
         acl: 'public-read',

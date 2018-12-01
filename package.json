@@ -1,5 +1,5 @@
 {
-  "name": "ember-cli-deploy-s3",
+  "name": "ember-cli-deploy-s3-prember",
   "version": "1.4.0",
   "description": "An ember-cli-deploy plugin to upload to s3",
   "keywords": [
